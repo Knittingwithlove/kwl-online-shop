@@ -1,0 +1,236 @@
+<html>
+<body bgcolor=#F2F2F0>
+<title>PAGOS Y ENVIOS</title>  
+<center>
+<style>
+form{
+	width:550px;
+	height:820px;
+	padding:5px;
+	border-radius:10px;
+	margin:auto;
+	background-color:pink;
+	font-family:Candara;
+	text-align: left;
+	
+}
+form label{
+	width:100%;
+	font-weight:bold;
+	text-align: left;
+	background-color:white;
+	
+}
+form input[type="text"]{
+	width:100%;
+	padding:3px 10px;
+	border:2px solid #231872;
+	border-radius:3px;
+	background-color:white;
+	margin:8px 0;
+}
+form input[type="date"]{
+	padding:3px 10px;
+	border:2px solid #231872;
+	border-radius:3px;
+	background-color:white;
+	margin:8px 0;
+}
+form input[type="number"]{
+	padding:3px 10px;
+	border:2px solid #231872;
+	border-radius:3px;
+	background-color:white;
+	margin:8px 0;
+}
+form input[type="reset"]{
+	padding:3px 10px;
+	border:2px solid maroon;
+	border-radius:3px;
+	background-color:#E5A892;
+	margin:8px 0;
+	font-family:Candara;font-weight:bold;
+}
+form input[type="submit"]{
+	padding:3px 10px;
+	border:2px solid green;
+	border-radius:3px;
+	background-color:#BBE592;
+	margin:8px 0;
+	font-family:Candara;font-weight:bold;
+	
+}
+.select-css{
+	padding:3px 10px;
+	border:2px solid #231872;
+	border-radius:3px;
+	background-color:white;
+	margin:8px 0;
+}
+
+
+.container {
+  width: 100%;
+  height: 90px;
+  border:medium solid black;
+  background-color: #E5E5E5;
+ border-radius: 40px 61px 61px 61px;
+-moz-border-radius: 60px 61px 61px 61px;
+-webkit-border-radius: 60px 61px 61px 61px;
+}
+
+.text {
+  color:black;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 50px Candara, Serif;
+  text-shadow: -4px 3px 0 pink;
+}
+table.tabla1,th.tabla1,td.tabla1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family:candara;
+ font-size: 42px;
+text-align:center;}
+
+table.tabla2,th.tabla2,td.tabla2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family:century gothic;
+ font-size: 42px;
+text-align:center;}
+
+.boton{
+  background-color:white;
+  color: black;
+  border:medium solid black;
+  padding: 10px 25px;
+  text-align: center; font-size:24px;
+  display: inline-block;
+  font-family:forte;
+  text-decoration: none;
+  border-radius: 60px 61px 61px 61px;
+-moz-border-radius: 60px 61px 61px 61px;
+-webkit-border-radius: 60px 61px 61px 61px;}
+
+.titulo{
+ background: white;
+ color: black;
+ font-size: 28px;
+ font-family: Candara;
+}
+
+.dos{ display: inline-block; }
+
+#general{	width: 1000px; 
+	height: 2000px;}
+#derecha{ float:right;margin-top:20px;margin-right:20px;margin-left:1px;padding:4px;
+	background-color:#F2D6D6;
+	width: 627px;
+	height: 870PX;
+	border: 5px double black;
+	font-family:candara;
+	font-size:18px;  }
+#izquierda{ float:left;margin-top:20px;margin-left:20px;margin-right:1px;margin-bottom:20px;padding:4px;
+	background-color:#F2D6D6;
+	width: 627px;
+	height: 870PX;
+	border: 5px double black;
+	font-family:candara;
+	font-size:18px;  }
+#abajo{ clear: both;margin-top:20px;margin-left:20px;margin-right:20px;margin-bottom:20px;padding:4px;
+	background-color:white;
+	width: 1260px;
+	height: 20PX;
+	border: 3px solid black;
+	font-family:candara;
+	font-size:18px;  }
+</style>
+
+<table class="tabla1">
+<tr>
+    <td rowspan="2"><img src="logo.png" border=1px; style="margin-right:50px" </td>
+    <td><div class="container">
+  <p class="text">KNITTING WITH LOVE</p><FONT FACE="candara" SIZE=3 COLOR="black"><b>‘’Thinking about you and your loved ones’’</b></FONT>
+</div></td>
+  </tr>
+  <tr>
+    <td>
+<a class="boton" href="KWL.html">KWL</a>
+<a class="boton" href="BORDADOS.html">BORDADOS</a>
+<a class="boton" href="TEJIDOS.html">TEJIDOS</a>
+<a class="boton" href="PAGOSyENVIOS.html">PAGO Y ENVIOS</a>
+<a class="boton" href="SERVICIOalCLIENTE.html">SERVICIO AL CLIENTE</a>
+</td>
+  </tr>
+</table>
+
+
+<div>
+<div id="derecha"><br>
+<form action="#" target="" method="get" name="formDatosPersonales">
+<label for="nombre">Nombre de Tarjeta</label>
+	<input type="text" name="nombre" id="nombre" placeholder="Escribe el nombre de la tarjeta"/><br><br>
+<label for="num">Número de Tarjeta</label><br>
+	<input type="number" name="num" id="num" placeholder="Escribe el número de tarjeta"/><br><br>
+<label for="cvv">CVV</label><br>
+	<input type="number" name="cvv" id="vcc" placeholder="Escribe tu CVV (3 digitos)"/><br><br>
+<label for="fecha">Fecha de Expiración</label><br>
+	<input type="date" name="fecha" id="fecha" ><br><br>
+<label for="País">País</label><br>
+<select class="select-css">
+    	<option value="México">México</option>
+    	<option value="Estados Unidos">Estados Unidos</option>
+   	 </select><br><br>
+<label for="Estado">Estado</label>
+	<input type="text" name="Estado" id="Estado" placeholder="Escribe el estado en el que vives"/><br><br>
+<label for="Ciudad">Ciudad</label>
+	<input type="text" name="Ciudad" id="Ciudad" placeholder="Escribe tu ciudad de residencia actual"/><br><br>
+<label for="Direccion">Dirección</label>
+	<input type="text" name="Direccion" id="Direccion" placeholder="Escribe tu dirección"/><br><br>
+<label for="Codigo">Código Postal</label><br>
+	<input type="number" name="Codigo" id="Codigo" placeholder="Escribe tu Código Postal"/><br><br>
+
+<input type="submit" value="Confirmar Datos" style="margin-right:335px" >
+<input type="Reset" value="Borrar todo">
+
+<br>
+</form>
+</div>
+
+<div>
+<div id="izquierda">
+<h1 class="titulo dos">
+FORMAS DE PAGO</h1>
+
+
+<table class="tabla2">
+<tr>
+<th><img src="paypal.png" style="margin-right:90px" width="150"  height="150"></th>
+<th><img src="visa.png"  width="150"  height="98"></th>
+</tr>
+<tr>
+<td><img src="oxxo.png" style="margin-right:80px" width="180"  height="98"></td>
+<td><img src="master.png" style="margin-top:5px" width="180"  height="105"></td>
+</tr>
+</table>
+<tr>
+<td><img src="mercadopago.png" style="margin-top:5px" width="180"  height="120"></td>
+</tr><br><br><br>
+<h1 class="titulo dos">
+FORMAS DE ENVÍO</h1>
+<table class="tabla2">
+<tr>
+<th><img src="correomx.png"  width="150"  height="150"></th>
+</tr>
+<tr>
+<td><img src="fedex.png" width="180"  height="98"></td>
+</tr>
+</table>
+</div>
+
+<div>
+<div id="abajo">
+<b><i>Derechos reservados © KWL S.A de C.V.</b></i>
+</div>
